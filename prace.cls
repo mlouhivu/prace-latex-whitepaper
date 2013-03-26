@@ -10,7 +10,7 @@
 %%%           geometry, graphicx, ifthen, booktabs
 %%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{prace}[2011/04/28 PRACE-RI Whitepaper class]
+\ProvidesClass{prace}[2013/03/26 PRACE-RI Whitepaper class]
 
 \DeclareOption{onecolumn}{\OptionNotUsed}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -27,7 +27,7 @@
 
 % page numbering
 \pagenumbering{arabic}
-\pagestyle{empty}
+%\pagestyle{empty}
 % default font
 \renewcommand{\normalsize}{\fontsize{10}{11}\selectfont}
 
