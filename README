@@ -1,0 +1,77 @@
+### Partnership for Advanced Computing in Europe 
+###   www.prace-ri.eu
+###
+### LaTeX package for a PRACE-RI whitepaper.
+###
+### (c) CSC - IT Center for Science Ltd.
+###   author: Martti Louhivuori (martti.louhivuori@csc.fi)
+
+PURPOSE
+---
+Enable the writing of a PRACE-RI project report in LaTeX with minimal 
+typographical effort. Uses a pre-defined document class 'prace' that 
+automatically sets the correct document style and layout as well as 
+provides custom macros for the ease-of-use of the writer.
+
+FILES
+---
+prace.cls       LaTeX document class
+template.tex    PRACE-RI whitepaper template
+prace-logo.png  logo of PRACE (used by prace.cls)
+prace-logo.eps   "
+
+example.tex     example of a filled-in template
+example.pdf     example PRACE-RI whitepaper
+example.png     figure used in the example whitepaper
+example.eps      "
+
+QUICK HOW-TO
+---
+1) copy 'template.tex' to 'yourname_yourproject.tex'
+2) fill in all the required information in 'yourname_yourproject.tex' using 
+   your favorite text editor
+3) convert .tex to .pdf, e.g. 'pdflatex yourname_yourproject'
+4) send the resulting PDF to PRACE
+
+MACROS
+---
+\author[<affiliation>]{<name of the author>}
+
+  Defines the name and affiliation(s) of an author. The affiliation(s) 
+  should be given as a comma-separated list of integers corresponding to 
+  the order of \affiliation definitions.
+
+\corresponding
+
+  Flags the following \author definition as the corresponding author.
+
+\affiliation{<name and address>}
+
+  Defines the name and address of an affiliation. The syntax should be 
+  'Name, Street, Postcode and City, Country'.
+
+\project{<project ID>}
+
+  Defines the project code of the PRACE project.
+
+\email{<e-mail address>}
+
+  Defines the e-mail address of the corresponding author.
+
+\tel{<telephone number>}
+
+  Defines the telephone number of the corresponding author. The syntax 
+  should be '+0-000-000-0000'.
+
+\fax{<fax number>}
+
+  Defines the fax number of the corresponding author. The syntax should 
+  be '+0-000-000-0000'.
+
+All these macros should be used in the pre-amble of the document, so that 
+all the required information is defined before calling \maketitle. In the 
+main body of the document you can use default LaTeX commands for sections, 
+figures etc., but you should refer to the comments in the 'template.tex' 
+for further information regarding the required structure, syntax and 
+nomenclature in a PRACE-RI whitepaper.
+
